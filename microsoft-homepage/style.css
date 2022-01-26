@@ -123,11 +123,12 @@ main-nav ul li a{
     margin-top: 20px ;
 }
 /* home cards */
-.home-cards{
+.home-cards ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     margin: 40px;
+    list-style: none;
 }
 .home-cards img{
     width: 100%;
