@@ -1,136 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projects</title>
     <style>
-        body {
-            min-width: 100%;
-            background-color: rgb(255, 255, 255);
-            padding: 0;
-            margin: 0;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
+      body {
+        min-width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
 
-        h1 {
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
 
-            border: 2px solid #f10c45;
-            color: #000;
-            margin-bottom: 80px;
-            margin-top: 30px;
-            border-radius: 10px;
+        border: 2px solid #f10c45;
+        color: #000;
+        margin-bottom: 80px;
+        margin-top: 30px;
+        border-radius: 10px;
+      }
 
+      section {
+        text-align: center;
+      }
 
-        }
+      ul {
+        margin-right: 30px;
+      }
 
-        section {
-            text-align: center;
-        }
+      li {
+        list-style: none;
+      }
 
-        ul {
+      .btn {
+        border: 1px solid #000;
+        border-radius: 10px;
 
-            margin-right: 30px;
+        color: #fff;
+        padding: 16px 32px;
+        text-align: center;
 
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
 
+      .button {
+        background-color: #000;
+      }
 
-        }
-
-        li {
-            list-style: none;
-
-
-        }
-
-        .btn {
-            border: 1px solid #000;
-            border-radius: 10px;
-
-            color: #fff;
-            padding: 16px 32px;
-            text-align: center;
-
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-
-        .btn1 {
-            background-color: #000;
-        }
-
-        .btn1:hover {
-            background-color: #f10c45;
-            color: white;
-            font-weight: bolder;
-            border: 1px solid #f10c45;
-
-
-        }
-
-
-        .btn2 {
-            background-color: #000;
-        }
-
-        .btn2:hover {
-            background-color: #f10c45;
-            color: white;
-            font-weight: bolder;
-            border: 1px solid #f10c45;
-
-        }
-
-        .btn3 {
-            background-color: #000;
-        }
-
-        .btn3:hover {
-            background-color: #f10c45;
-            color: white;
-            font-weight: bolder;
-            border: 1px solid #f10c45;
-
-
-        }
+      .button:hover {
+        background-color: #f10c45;
+        color: white;
+        font-weight: bolder;
+        border: 1px solid #f10c45;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <h1>Shivangani Vats's Projects</h1>
-        </div>
+      <div class="container">
+        <h1>Shivangani Vats's Projects</h1>
+      </div>
     </header>
 
     <section>
-        <ul>
-            <li>
+      <ul>
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='acme-web-design/index.html'"
+          >
+            Acme Web Design
+          </button>
+        </li>
 
-                <button class="btn btn1" onclick="document.location='acme-web-design/index.html'">Acme Web
-                    Design</button>
-            </li>
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='netflix/index.html'"
+          >
+            Netflix Landing Page Clone
+          </button>
+        </li>
 
-
-            <li>
-                <button class="btn btn2" onclick="document.location='netflix/index.html'">Netflix Landing Page
-                    Clone</button>
-            </li>
-
-            <li>
-                <button class="btn btn3" onclick="document.location='microsoft-homepage/index.html'">Microsoft Landing
-                    Page Clone</button>
-            </li>
-        </ul>
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='microsoft-homepage/index.html'"
+          >
+            Microsoft Landing Page Clone
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='my-tunes/index.html'"
+          >
+            my-Tunes
+          </button>
+        </li>
+      </ul>
     </section>
-</body>
-
+  </body>
 </html>
