@@ -80,6 +80,10 @@ main {
   background: #f4f4f4;
 }
 
+section ul li {
+  list-style: none;
+}
+
 #header {
   padding: 1.5rem;
   text-align: center;
