@@ -8,20 +8,13 @@
     <style>
       * {
         box-sizing: border-box;
-      }
-      body {
-        min-width: 100%;
-        background-color: #fff;
-        padding: 0;
         margin: 0;
-        min-height: 100vh;
-        overflow-x: hidden;
+        padding: 0;
       }
 
       h1 {
         text-align: center;
         font-family: "Courier New", Courier, monospace;
-
         border: 2px solid #f10c45;
         color: #000;
         margin-bottom: 80px;
@@ -31,10 +24,13 @@
 
       section {
         text-align: center;
+        padding: 0 20px;
       }
 
-      ul {
-        margin-right: 30px;
+      section ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
       }
 
       li {
@@ -47,10 +43,7 @@
 
         color: #fff;
         padding: 16px 32px;
-        text-align: center;
-
         text-decoration: none;
-        display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
         transition-duration: 0.4s;
@@ -140,6 +133,23 @@
             onclick="document.location='mobile-first-website/index.html'"
           >
             Acme Photography
+          </button>
+        </li>
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='the-beach/index.html'"
+          >
+            Fullscreen Landing Page
+          </button>
+        </li>
+        <!-- CSS Grids Layout -->
+        <li>
+          <button
+            class="btn button"
+            onclick="document.location='grid-layout-with-image-span/index.html'"
+          >
+            Grid Layout With Image Span
           </button>
         </li>
       </ul>
