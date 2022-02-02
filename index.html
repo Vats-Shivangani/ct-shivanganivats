@@ -11,53 +11,45 @@
         margin: 0;
         padding: 0;
       }
-
-      h1 {
+      body {
+        background-color: #fff;
+        overflow: auto;
+      }
+      header {
+        color: rgb(9, 161, 9);
         text-align: center;
-        font-family: "Courier New", Courier, monospace;
-        border: 2px solid #f10c45;
-        color: #000;
-        margin-bottom: 80px;
-        margin-top: 30px;
-        border-radius: 10px;
+        border: 1px solid rgb(9, 161, 9);
+        background-color: #fff;
       }
 
-      section {
-        text-align: center;
-        padding: 0 20px;
-      }
-
-      section ul {
-        display: flex;
-        flex-direction: column;
-      }
-
-      li {
-        list-style: none;
-      }
-
-      .btn {
-        border: 1px solid #000;
-        border-radius: 10px;
-
-        color: #fff;
-        padding: 16px 32px;
+      a {
+        display: block;
+        color: rgb(39, 7, 97);
+        border: 1px solid rgb(39, 7, 97);
+        width: auto;
+        padding: 20px;
+        margin: 10px;
         text-decoration: none;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
       }
-
-      .button {
-        background-color: #000;
+      a:hover {
+        border: 1px solid rgb(9, 161, 9);
+        color: rgb(9, 161, 9);
       }
-
-      .button:hover {
-        background-color: #f10c45;
-        color: white;
-        font-weight: bolder;
-        border: 1px solid #f10c45;
+      ul {
+        list-style: none;
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      @media (max-width: 750px) {
+        ul {
+          display: flex;
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -73,83 +65,52 @@
       <ul>
         <!-- Acme Web Design -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='acme-web-design/index.html'"
-          >
-            Acme Web Design
-          </button>
+          <a href="acme-web-design/index.html" class="link">Acme Web Design </a>
         </li>
         <!--Netflix Landing Page Clone   -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='netflix/index.html'"
-          >
-            Netflix Landing Page Clone
-          </button>
+          <a href="netflix/index.html" class="link"
+            >Netflix Landing Page Clone
+          </a>
         </li>
         <!--Microsoft Landing Page Clone  -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='microsoft-homepage/index.html'"
+          <a href="microsoft-homepage/index.html" class="link"
+            >Microsoft Landing Page Clone</a
           >
-            Microsoft Landing Page Clone
-          </button>
         </li>
         <!-- myTunes -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='my-tunes/index.html'"
-          >
-            my-Tunes
-          </button>
+          <a href="my-tunes/index.html" class="link"> myTunes </a>
         </li>
         <!-- Pluralsight Login Page Clone -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='plural-sight/index.html'"
-          >
-            Pluralsight Login Page Clone
-          </button>
+          <a href="plural-sight/index.html" class="link"
+            >Pluralsight Login Page Clone
+          </a>
         </li>
         <!--Elegant Landing Page  -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='elegant-landing-page/index.html'"
-          >
-            Elegant Landing Page
-          </button>
+          <a href="elegant-landing-page/index.html" class="link"
+            >Elegant Landing Page
+          </a>
         </li>
         <!-- mobile first website -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='mobile-first-website/index.html'"
-          >
-            Acme Photography
-          </button>
+          <a href="mobile-first-website/index.html" class="link"
+            >Acme Photography
+          </a>
         </li>
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='the-beach/index.html'"
-          >
+          <a href="the-beach/index.html" class="link">
             Fullscreen Landing Page
-          </button>
+          </a>
         </li>
         <!-- CSS Grids Layout -->
         <li>
-          <button
-            class="btn button"
-            onclick="document.location='grid-layout-with-image-span/index.html'"
+          <a href="grid-layout-with-image-span/index.html" class="link"
+            >Grid Layout With Image Span</a
           >
-            Grid Layout With Image Span
-          </button>
         </li>
       </ul>
     </section>
