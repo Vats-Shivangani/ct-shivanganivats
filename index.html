@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>projects</title>
+    <title>Projects</title>
     <style>
       * {
         box-sizing: border-box;
@@ -43,12 +43,15 @@
         width: 80%;
         margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
       }
-      @media (max-width: 750px) {
+      @media (max-width: 800px) {
         ul {
           display: flex;
           flex-direction: column;
+          justify-content: space-between;
+          align-items: stretch;
+          flex-wrap: wrap;
         }
       }
     </style>
