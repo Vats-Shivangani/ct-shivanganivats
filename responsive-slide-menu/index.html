@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="sidebar menu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="slidebar">
+        <a href="#" id="side-Menu" onclick="openSlideMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
+      </span>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Services</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="button-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <section id="main">
+        <h1>Responsive Menu</h1>
+        </div>
+
+        <script>
+            function openSlideMenu() {
+                document.getElementById("side-menu").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeSlideMenu() {
+                document.getElementById("side-menu").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+</body>
+
+</html>
