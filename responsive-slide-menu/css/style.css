@@ -37,6 +37,7 @@ nav ul {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+
 }
 
 .side-nav a {
@@ -52,7 +53,7 @@ nav ul {
     color: #fff;
 }
 
-.side-nav .btn-close {
+.side-nav .button-close {
     position: absolute;
     top: 0;
     right: 22px;
